@@ -1,0 +1,13 @@
+spring:
+  hornetq:
+    mode: native
+    host: localhost
+    port: 5445
+    user: guest
+    password: guest
+routing:
+  sendExchange: requests
+listening:
+  DestinationName: responses
+OMDB:
+  baseUrl: http://www.omdbapi.com/
