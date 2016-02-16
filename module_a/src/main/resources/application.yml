@@ -1,13 +1,17 @@
 spring:
-  hornetq:
-    mode: native
+  rabbitmq:
     host: localhost
-    port: 5445
-    user: guest
-    password: guest
-routing:
-  sendExchange: requests
-listening:
-  DestinationName: responses
+    port: 5672
+    username: module_a
+    password: module_a
+producer:
+  exchange: ""
+  type: direct
+  routeKey: requests
+consumer:
+  exchange: ""
+  type: direct
+  routeKey: responses
+
 OMDB:
   baseUrl: http://www.omdbapi.com/
