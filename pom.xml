@@ -7,6 +7,11 @@
     <groupId>com.dortega</groupId>
     <artifactId>challenge</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
-
+    <modules>
+        <module>common</module>
+        <module>module_a</module>
+        <module>module_b</module>
+    </modules>
 </project>
